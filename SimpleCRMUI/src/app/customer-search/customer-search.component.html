@@ -1,0 +1,13 @@
+<div id="search-component">
+	<h4>Customer Search</h4>
+
+	<input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+
+	<ul class="search-result">
+		<li *ngFor="let customer of customers$ | async">
+			<a routerLink="/detail/{{customer.id}}">
+				{{customer.surname}}
+			</a>
+		</li>
+	</ul>
+</div>

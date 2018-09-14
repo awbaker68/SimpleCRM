@@ -1,0 +1,22 @@
+<div *ngIf="customer">
+	<h2>{{customer.firstname}} {{customer.surname | uppercase}} Details</h2>
+	<div><span>id: </span>{{customer.id}}</div>
+	<div>
+		<label>firstname: <input [(ngModel)]="customer.firstname" placeholder="firstname"></label>
+	</div>
+	<div>
+		<label>surname: <input [(ngModel)]="customer.surname" placeholder="surname"></label>
+	</div>
+	<div>
+		<label>address: <input [(ngModel)]="customer.address" placeholder="address"></label>
+	</div>
+	<div>
+		<label>phone: <input [(ngModel)]="customer.phone" placeholder="phone"></label>
+	</div>
+	<div>
+		<label>email: <input [(ngModel)]="customer.email" placeholder="email"></label>
+	</div>
+</div>
+
+<button (click)="goBack()">go back</button>
+<button (click)="save()">save</button>
