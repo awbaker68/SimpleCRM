@@ -1,7 +1,20 @@
-<h1>{{title}}</h1>
-<nav>
-	<a routerLink="/customers">Customers</a>
-	<a routerLink="/dashboard">Dashboard</a>
-</nav>
+
+<nav class="navbar navbar-dark bg-dark mb-5">
+		<a class="navbar-brand" href="/">{{title}}</a>
+		<div class="navbar-expand mr-auto">
+		  <div class="navbar-nav">
+			<a class="nav-item nav-link active" routerLink="/dashboard">Dashboard</a>
+			<a class="nav-item nav-link" routerLink="/customers">Customers</a>
+		  </div>
+		</div>
+		<div class="navbar-expand ml-auto navbar-nav">
+		  <div class="navbar-nav">
+			<a class="nav-item nav-link" href="https://github.com/awbaker68" target="_blank">
+			  <i class="fa fa-github"></i>
+			</a>
+		  </div>
+		</div>
+	  </nav>
+
 <router-outlet></router-outlet>
 <app-messages></app-messages>

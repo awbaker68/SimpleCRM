@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
@@ -24,6 +26,8 @@ import { CustomerSearchComponent } from './customer-search/customer-search.compo
 		CustomerSearchComponent
 	],
 	imports: [
+		AngularFontAwesomeModule,
+		NgbModule.forRoot(),
 		BrowserModule,
 		FormsModule,
 		AppRoutingModule,
